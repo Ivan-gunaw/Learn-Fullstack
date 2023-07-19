@@ -1,7 +1,7 @@
-const todoRoute = require ("express").Router();
-const todoController = require ("../controllers/todoController");
+const todoRoute = require("express").Router();
+const TodoController = require("../controllers/TodoController");
 
-todoRoute.get("/", todoController.getTodos);
-todoRoute.get("/create", todoController.create);
+todoRoute.get("/", TodoController.getTodos);
+todoRoute.get("/create", TodoController.create);
 
 module.exports = todoRoute;

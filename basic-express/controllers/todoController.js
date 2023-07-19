@@ -1,11 +1,10 @@
-class todoController {
-    static getTodos (req,res) {
-        res.send("Todos Page");
+class TodoController {
+    static getTodos(req, res) {
+      res.send("Todos Page");
     }
-
-    static create (req,res) {
-        res.send("Create Todo Page");
+    static create(req, res) {
+      res.send("Create Todo page");
     }
-}
-
-module.exports = todoController;
+  }
+  
+  module.exports = TodoController;

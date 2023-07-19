@@ -1,11 +1,11 @@
-class userController {
-    static getUsers(req,res) {
-        res.send("Users Page");
+class UserController {
+    static getUsers(req, res) {
+      res.send("Users Page");
     }
-
     static create(req, res) {
-        res.send("Create User Page");
+      res.send("Create User Page");
     }
-}
-
-module.exports = userController;
+  }
+  
+  module.exports = UserController;
+  

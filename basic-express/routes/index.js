@@ -1,13 +1,12 @@
-const route = require ("express").Router();
+const route = require("express").Router();
 
-route.get("/", (req,res) => {
-    res.send("Hello World!!");
+route.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
-const todoRoutes = require ("./todos");
-todoRoutes.use("/todos", todoRoutes);
-
-const userRoutes = require ("./users");
-userRoutes.use("/users", userRoutes);
+const todoRoutes = require("./todos");
+const userRoutes = require("./users");
+route.use("/todos", todoRoutes);
+route.use("/users", userRoutes);
 
 module.exports = route;

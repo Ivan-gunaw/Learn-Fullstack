@@ -1,7 +1,7 @@
-const userRoute = require ("express").Router();
-const userController = require ("../controllers/userController");
+const userRoute = require("express").Router();
+const UserController = require("../controllers/UserController");
 
-userRoute.get("/", userController.getUsers);
-userRoute.get("/create", userController.create);
+userRoute.get("/", UserController.getUsers);
+userRoute.get("/create", UserController.create);
 
 module.exports = userRoute;
