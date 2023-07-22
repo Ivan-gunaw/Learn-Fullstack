@@ -5,8 +5,8 @@ route.get("/", (req, res) => {
 });
 
 const todoRoutes = require("./todos");
-// const userRoutes = require("./users");
+const userRoutes = require("./users");
 route.use("/todos", todoRoutes);
-// route.use("/users", userRoutes);
+route.use("/users", userRoutes);
 
 module.exports = route;
