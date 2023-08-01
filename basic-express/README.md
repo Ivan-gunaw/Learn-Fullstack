@@ -24,3 +24,6 @@
 
 11. masukan pada terminal -> `npx nodemon app.js` // untuk menjalankan node.JS || notes : nama file yang dijalankan bebas app.js
     hanyalah contoh nama file.
+
+------------------------------------------------------------------------------------------------------------------
+12. 
